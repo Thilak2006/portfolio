@@ -1,6 +1,9 @@
 // =============================================
 // ===== CREATIVE CONSTELLATION CURSOR =====
 // =============================================
+(function(){
+    emailjs.init("K6lJu7-kn43hBRiAs"); // ✅ PUBLIC KEY here
+})();
 const cursorMain = document.getElementById('cursorMain');
 const cursorOuter = document.getElementById('cursorOuter');
 const TRAIL_COUNT = 8;
@@ -372,15 +375,36 @@ backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 's
 
 
 // ===== CONTACT FORM =====
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    const fd = new FormData(e.target);
-    window.location.href = `mailto:thilakvairi.s27@gmail.com?subject=${encodeURIComponent(fd.get('subject'))}&body=${encodeURIComponent(`Name: ${fd.get('name')}\nEmail: ${fd.get('email')}\n\nMessage:\n${fd.get('message')}`)}`;
-    const btn = e.target.querySelector('button[type="submit"]');
-    const orig = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i> Opening Email Client...';
-    btn.style.background = 'linear-gradient(135deg,#00ff88,#00d4ff)';
-    setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; e.target.reset(); }, 3000);
+
+    const btn = this.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
+
+    btn.innerHTML = '🚀 Sending...';
+    btn.disabled = true;
+
+    emailjs.sendForm(
+        'service_2lffah4',   // ✅ SERVICE ID here
+        'template_8egt7og',  // ✅ TEMPLATE ID here
+        this
+    )
+    .then(() => {
+        btn.innerHTML = '✅ Message Sent!';
+        btn.style.background = 'linear-gradient(135deg,#00ff88,#00d4ff)';
+        this.reset();
+    })
+    .catch((error) => {
+        console.error(error);
+        btn.innerHTML = '❌ Failed. Try again';
+    })
+    .finally(() => {
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            btn.style.background = '';
+        }, 3000);
+    });
 });
 
 
