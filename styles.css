@@ -861,17 +861,36 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    color: var(--dark);
     box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
-    animation: centerPulse 3s infinite ease-in-out
+    animation: centerPulse 3s infinite ease-in-out, borderSpin 8s linear infinite;
+    padding: 6px;
+    z-index: 5;
+}
+
+@keyframes borderSpin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.center-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: var(--dark);
+    animation: imageCounterSpin 8s linear infinite;
+}
+
+@keyframes imageCounterSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
 }
 
 @keyframes centerPulse {
