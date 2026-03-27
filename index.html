@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thilak S | Full Stack Developer & AI Enthusiast</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">Thilak</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="loader-text">Loading portfolio...</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percent">0%</div>
+        </div>
+    </div>
     <!-- ===== CREATIVE CURSOR ===== -->
     <div class="cursor-main" id="cursorMain"></div>
     <div class="cursor-outer" id="cursorOuter">
         <svg class="cursor-svg" viewBox="0 0 50 50">
-            <circle class="cursor-circle-track" cx="25" cy="25" r="22"/>
-            <circle class="cursor-circle-progress" cx="25" cy="25" r="22"/>
+            <circle class="cursor-circle-track" cx="25" cy="25" r="22" />
+            <circle class="cursor-circle-progress" cx="25" cy="25" r="22" />
         </svg>
     </div>
     <div class="cursor-trail" id="cursorTrail"></div>
@@ -40,13 +58,21 @@
                 <span class="logo-bracket">/&gt;</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active"><span class="nav-icon"><i class="fas fa-home"></i></span><span class="nav-text">Home</span></a></li>
-                <li><a href="#about" class="nav-link"><span class="nav-icon"><i class="fas fa-user"></i></span><span class="nav-text">About</span></a></li>
-                <li><a href="#skills" class="nav-link"><span class="nav-icon"><i class="fas fa-cogs"></i></span><span class="nav-text">Skills</span></a></li>
-                <li><a href="#projects" class="nav-link"><span class="nav-icon"><i class="fas fa-folder-open"></i></span><span class="nav-text">Projects</span></a></li>
-                <li><a href="#achievements" class="nav-link"><span class="nav-icon"><i class="fas fa-trophy"></i></span><span class="nav-text">Achievements</span></a></li>
-                <li><a href="#education" class="nav-link"><span class="nav-icon"><i class="fas fa-graduation-cap"></i></span><span class="nav-text">Education</span></a></li>
-                <li><a href="#contact" class="nav-link"><span class="nav-icon"><i class="fas fa-envelope"></i></span><span class="nav-text">Contact</span></a></li>
+                <li><a href="#home" class="nav-link active"><span class="nav-icon"><i
+                                class="fas fa-home"></i></span><span class="nav-text">Home</span></a></li>
+                <li><a href="#about" class="nav-link"><span class="nav-icon"><i class="fas fa-user"></i></span><span
+                            class="nav-text">About</span></a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-icon"><i class="fas fa-cogs"></i></span><span
+                            class="nav-text">Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-icon"><i
+                                class="fas fa-folder-open"></i></span><span class="nav-text">Projects</span></a></li>
+                <li><a href="#achievements" class="nav-link"><span class="nav-icon"><i
+                                class="fas fa-trophy"></i></span><span class="nav-text">Achievements</span></a></li>
+                <li><a href="#education" class="nav-link"><span class="nav-icon"><i
+                                class="fas fa-graduation-cap"></i></span><span class="nav-text">Education</span></a>
+                </li>
+                <li><a href="#contact" class="nav-link"><span class="nav-icon"><i
+                                class="fas fa-envelope"></i></span><span class="nav-text">Contact</span></a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -68,32 +94,42 @@
                 <span class="cursor-blink">|</span>
             </div>
             <p class="hero-subtitle">
-                <span class="subtitle-word">Full Stack Developer</span>
+                <span class="subtitle-word">Machine Learning Engineer</span>
                 <span class="subtitle-divider">•</span>
                 <span class="subtitle-word">AI Enthusiast</span>
                 <span class="subtitle-divider">•</span>
                 <span class="subtitle-word">Problem Solver</span>
             </p>
             <div class="hero-description">
-                <p>I build intelligent solutions with <span class="highlight">Python</span>, <span class="highlight">React</span> & <span class="highlight">Node.js</span></p>
+                <p>I build intelligent solutions with <span class="highlight">Python</span>, <span
+                        class="highlight">React</span> & <span class="highlight">Node.js</span></p>
             </div>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
-                <a href="Thilak_CV.pdf" download="Thilak_S_Resume.pdf" class="btn btn-download"><i class="fas fa-download"></i> Download CV</a>
+                <a href="Thilak_CV.pdf" download="Thilak_S_Resume.pdf" class="btn btn-download"><i
+                        class="fas fa-download"></i> Download CV</a>
                 <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
             </div>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/thilak-sakkaravarthi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Thilak" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/thilak-sakkaravarthi" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Thilak" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
                 <a href="mailto:thilakvairi.s27@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="tel:+918122669275" aria-label="Phone"><i class="fas fa-phone"></i></a>
             </div>
         </div>
         <div class="hero-visual">
             <div class="orbit-system">
-                <div class="orbit orbit-1"><div class="orbit-dot dot-1"><i class="fab fa-python"></i></div></div>
-                <div class="orbit orbit-2"><div class="orbit-dot dot-2"><i class="fab fa-react"></i></div></div>
-                <div class="orbit orbit-3"><div class="orbit-dot dot-3"><i class="fab fa-node-js"></i></div></div>
+                <div class="orbit orbit-1">
+                    <div class="orbit-dot dot-1"><i class="fab fa-python"></i></div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="orbit-dot dot-2"><i class="fab fa-react"></i></div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="orbit-dot dot-3"><i class="fab fa-node-js"></i></div>
+                </div>
                 <div class="center-icon"><i class="fas fa-brain"></i></div>
             </div>
         </div>
@@ -109,9 +145,14 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">I'm a passionate <span class="highlight">Full Stack Developer</span> currently pursuing my Bachelor of Technology in Computer Science and Engineering at <span class="highlight">Lovely Professional University</span>.</p>
-                    <p>With hands-on experience in building AI-powered applications, web development, and problem-solving, I love creating innovative solutions that make a real impact.</p>
-                    <p>My journey includes completing a Full Stack Development internship in React and Node.js, earning multiple certifications, and achieving competitive programming badges on platforms like CodeChef and HackerRank.</p>
+                    <p class="about-intro">I'm a passionate <span class="highlight">Machine Learning Engineer</span>
+                        currently pursuing my Bachelor of Technology in Computer Science and Engineering at <span
+                            class="highlight">Lovely Professional University</span>.</p>
+                    <p>With hands-on experience in building AI-powered applications, web development, and
+                        problem-solving, I love creating innovative solutions that make a real impact.</p>
+                    <p>My journey includes completing a Full Stack Development internship in React and Node.js, earning
+                        multiple certifications, and achieving competitive programming badges on platforms like CodeChef
+                        and HackerRank.</p>
                     <div class="about-stats">
                         <div class="stat-card" data-count="4">
                             <div class="stat-number">0</div>
@@ -125,7 +166,7 @@
                             <div class="stat-number">0</div>
                             <p>Languages</p>
                         </div>
-                        <div class="stat-card" data-count="2">
+                        <div class="stat-card" data-count="3">
                             <div class="stat-number">0</div>
                             <p>Awards</p>
                         </div>
@@ -142,15 +183,31 @@
                             <span class="window-title">developer.json</span>
                         </div>
                         <div class="window-body">
-                            <div class="code-line"><span class="line-number">1</span><span class="punctuation">{</span></div>
-                            <div class="code-line"><span class="line-number">2</span>  <span class="key">"name"</span><span class="punctuation">:</span> <span class="string">"Thilak S"</span><span class="punctuation">,</span></div>
-                            <div class="code-line"><span class="line-number">3</span>  <span class="key">"role"</span><span class="punctuation">:</span> <span class="string">"Full Stack Dev"</span><span class="punctuation">,</span></div>
-                            <div class="code-line"><span class="line-number">4</span>  <span class="key">"passion"</span><span class="punctuation">:</span> <span class="string">"AI & Web Dev"</span><span class="punctuation">,</span></div>
-                            <div class="code-line"><span class="line-number">5</span>  <span class="key">"frontend"</span><span class="punctuation">:</span> <span class="string">"React, HTML, CSS"</span><span class="punctuation">,</span></div>
-                            <div class="code-line"><span class="line-number">6</span>  <span class="key">"backend"</span><span class="punctuation">:</span> <span class="string">"Python, Node, Flask"</span><span class="punctuation">,</span></div>
-                            <div class="code-line"><span class="line-number">7</span>  <span class="key">"ai_ml"</span><span class="punctuation">:</span> <span class="string">"TensorFlow, RAG, ML"</span><span class="punctuation">,</span></div>
-                            <div class="code-line"><span class="line-number">8</span>  <span class="key">"learning"</span><span class="punctuation">:</span> <span class="boolean">true</span></div>
-                            <div class="code-line"><span class="line-number">9</span><span class="punctuation">}</span></div>
+                            <div class="code-line"><span class="line-number">1</span><span class="punctuation">{</span>
+                            </div>
+                            <div class="code-line"><span class="line-number">2</span> <span
+                                    class="key">"name"</span><span class="punctuation">:</span> <span
+                                    class="string">"Thilak S"</span><span class="punctuation">,</span></div>
+                            <div class="code-line"><span class="line-number">3</span> <span
+                                    class="key">"role"</span><span class="punctuation">:</span> <span
+                                    class="string">"Machine Learning Engineer"</span><span class="punctuation">,</span></div>
+                            <div class="code-line"><span class="line-number">4</span> <span
+                                    class="key">"passion"</span><span class="punctuation">:</span> <span
+                                    class="string">"AI & Web Dev"</span><span class="punctuation">,</span></div>
+                            <div class="code-line"><span class="line-number">5</span> <span
+                                    class="key">"frontend"</span><span class="punctuation">:</span> <span
+                                    class="string">"React, HTML, CSS"</span><span class="punctuation">,</span></div>
+                            <div class="code-line"><span class="line-number">6</span> <span
+                                    class="key">"backend"</span><span class="punctuation">:</span> <span
+                                    class="string">"Python, Node, Flask"</span><span class="punctuation">,</span></div>
+                            <div class="code-line"><span class="line-number">7</span> <span
+                                    class="key">"ai_ml"</span><span class="punctuation">:</span> <span
+                                    class="string">"TensorFlow, RAG, ML"</span><span class="punctuation">,</span></div>
+                            <div class="code-line"><span class="line-number">8</span> <span
+                                    class="key">"learning"</span><span class="punctuation">:</span> <span
+                                    class="boolean">true</span></div>
+                            <div class="code-line"><span class="line-number">9</span><span class="punctuation">}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,221 +217,311 @@
     </section>
 
     <!-- ===== SKILLS SECTION ===== -->
-<section id="skills">
-  <div class="container">
-
-    <div class="section-header">
-      <span class="section-tag">[ Expertise ]</span>
-      <h2 class="section-title">Skills & Technologies</h2>
-      <div class="title-underline"></div>
-    </div>
-
-    <div class="skills-grid">
-
-      <!-- FRONTEND -->
-      <div class="skill-category">
-        <div class="category-icon">💻</div>
-        <h3>Frontend Development</h3>
-
-        <div class="skill-items">
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">JavaScript</span>
-              <span class="skill-level advanced">Advanced</span>
-            </div>
-            <div class="skill-tags">
-              <span>ES6+</span><span>DOM</span><span>Async</span><span>APIs</span>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">React</span>
-              <span class="skill-level intermediate">Intermediate</span>
-            </div>
-            <div class="skill-tags">
-              <span>Hooks</span><span>State</span><span>Components</span>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">HTML & CSS</span>
-              <span class="skill-level advanced">Advanced</span>
-            </div>
-            <div class="skill-tags">
-              <span>Responsive</span><span>Animations</span><span>UI/UX</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- BACKEND -->
-      <div class="skill-category">
-        <div class="category-icon">🛠️</div>
-        <h3>Backend Development</h3>
-
-        <div class="skill-items">
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Node.js</span>
-              <span class="skill-level intermediate">Intermediate</span>
-            </div>
-            <div class="skill-tags">
-              <span>Express</span><span>REST APIs</span>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">MongoDB</span>
-              <span class="skill-level intermediate">Intermediate</span>
-            </div>
-            <div class="skill-tags">
-              <span>NoSQL</span><span>CRUD</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- AI / ML -->
-      <div class="skill-category">
-        <div class="category-icon">🧠</div>
-        <h3>AI / Machine Learning</h3>
-
-        <div class="skill-items">
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Python</span>
-              <span class="skill-level advanced">Advanced</span>
-            </div>
-            <div class="skill-tags">
-              <span>Pandas</span><span>NumPy</span><span>Data Analysis</span>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Machine Learning</span>
-              <span class="skill-level intermediate">Intermediate</span>
-            </div>
-            <div class="skill-tags">
-              <span>Scikit-learn</span><span>Clustering</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-    <!-- ===== PROJECTS — HORIZONTAL SCROLL CARDS ===== -->
-    <section id="projects" class="projects">
+    <section id="skills">
         <div class="container">
+
             <div class="section-header">
-                <span class="section-tag">&lt;projects&gt;</span>
-                <h2 class="section-title">Featured Projects</h2>
+                <span class="section-tag">[ Expertise ]</span>
+                <h2 class="section-title">Skills & Technologies</h2>
                 <div class="title-underline"></div>
-                <p class="scroll-hint"><i class="fas fa-hand-pointer"></i> Drag or scroll sideways to explore</p>
             </div>
-        </div>
 
-        <div class="carousel-wrapper">
-            <button class="carousel-arrow arrow-left" id="projLeft"><i class="fas fa-chevron-left"></i></button>
-            <div class="carousel-track" id="projectTrack">
+            <div class="skills-grid">
 
-                <!-- Card 1 -->
-                <div class="showcase-card">
-                    <div class="card-glow"></div>
-                    <div class="card-stripe malicious-stripe"></div>
-                    <div class="card-visual malicious-gradient">
-                        <div class="card-badge fire-badge">🔥 Latest</div>
-                        <div class="floating-icon"><div class="icon-shape"><i class="fas fa-shield-virus"></i></div></div>
-                        <div class="card-overlay">
-                            <a href="https://github.com/Thilak2006/Malicious-Webpage-Detection" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a>
+                <!-- FRONTEND -->
+                <div class="skill-category">
+                    <div class="category-icon">💻</div>
+                    <h3>Frontend Development</h3>
+
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>ES6+ </span><span>DOM </span><span>Async </span><span>APIs</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="meta-date"><i class="far fa-calendar-alt"></i> Dec 2025</span><span class="meta-type ml-type">Machine Learning</span></div>
-                        <h3 class="card-title">Malicious Webpage Detection</h3>
-                        <p class="card-desc">An ML system using SVM & Random Forest to analyze URL patterns, content and metadata to detect and block malicious webpages for enhanced web security.</p>
-                        <div class="card-tags"><span class="tag py">Python</span><span class="tag ml">ML</span><span class="tag">SVM</span><span class="tag">Random Forest</span><span class="tag">Scikit-learn</span></div>
-                        <div class="card-features"><div class="feat"><i class="fas fa-shield-alt"></i> Web Security</div><div class="feat"><i class="fas fa-chart-bar"></i> Classification</div><div class="feat"><i class="fas fa-search"></i> URL Analysis</div></div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Hooks </span><span>State </span><span>Components </span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Responsive </span><span>Animations </span><span>UI/UX</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="showcase-card">
-                    <div class="card-glow"></div>
-                    <div class="card-stripe gym-stripe"></div>
-                    <div class="card-visual gym-gradient">
-                        <div class="card-badge new-badge">⚡ New</div>
-                        <div class="floating-icon"><div class="icon-shape gym-icon"><i class="fas fa-dumbbell"></i></div></div>
-                        <div class="card-overlay">
-                            <a href="https://github.com/Thilak2006/gym-eshop-using-react-and-nodejs" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a>
+                <!-- BACKEND -->
+                <div class="skill-category">
+                    <div class="category-icon">🛠️</div>
+                    <h3>Backend Development</h3>
+
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Express </span><span>REST APIs </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="meta-date"><i class="far fa-calendar-alt"></i> Jul 2025</span><span class="meta-type fs-type">Full Stack</span></div>
-                        <h3 class="card-title">Gym eShop</h3>
-                        <p class="card-desc">A full-stack e-commerce platform for gym equipment built with React frontend and Node.js backend, featuring product management, cart system & user authentication.</p>
-                        <div class="card-tags"><span class="tag react">React</span><span class="tag node">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">REST API</span></div>
-                        <div class="card-features"><div class="feat"><i class="fas fa-shopping-cart"></i> E-Commerce</div><div class="feat"><i class="fas fa-lock"></i> Auth</div><div class="feat"><i class="fas fa-mobile-alt"></i> Responsive</div></div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>NoSQL </span><span>CRUD </span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="showcase-card">
-                    <div class="card-glow"></div>
-                    <div class="card-stripe chat-stripe"></div>
-                    <div class="card-visual chat-gradient">
-                        <div class="floating-icon"><div class="icon-shape chat-icon"><i class="fas fa-comments"></i></div></div>
-                        <div class="card-overlay">
-                            <a href="https://github.com/Thilak" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="meta-date"><i class="far fa-calendar-alt"></i> Nov 2025</span><span class="meta-type ai-type">AI / NLP</span></div>
-                        <h3 class="card-title">AI Chat Assistant</h3>
-                        <p class="card-desc">An AI-powered conversational chatbot generating real-time, context-aware responses through a robust API-driven NLP backend with a responsive front-end interface.</p>
-                        <div class="card-tags"><span class="tag py">Python</span><span class="tag">Flask</span><span class="tag">NLP</span><span class="tag">API</span><span class="tag">HTML/CSS</span></div>
-                        <div class="card-features"><div class="feat"><i class="fas fa-bolt"></i> Real-time</div><div class="feat"><i class="fas fa-server"></i> API-Driven</div><div class="feat"><i class="fas fa-brain"></i> Context-Aware</div></div>
-                    </div>
-                </div>
+                <!-- AI / ML -->
+                <div class="skill-category">
+                    <div class="category-icon">🧠</div>
+                    <h3>AI / Machine Learning</h3>
 
-                <!-- Card 4 -->
-                <div class="showcase-card">
-                    <div class="card-glow"></div>
-                    <div class="card-stripe deadlock-stripe"></div>
-                    <div class="card-visual deadlock-gradient">
-                        <div class="floating-icon"><div class="icon-shape deadlock-icon"><i class="fas fa-network-wired"></i></div></div>
-                        <div class="card-overlay">
-                            <a href="https://github.com/Thilak" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Code</a>
+                    <div class="skill-items">
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Pandas </span><span>NumPy </span><span>Data Analysis</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="meta-date"><i class="far fa-calendar-alt"></i> Apr 2025</span><span class="meta-type ai-type">AI / Graphs</span></div>
-                        <h3 class="card-title">AI Deadlock Detection</h3>
-                        <p class="card-desc">A tool that automatically detects deadlocks in complex process workflows using graph-based analysis with RAG technology and NetworkX for cycle-detection algorithms.</p>
-                        <div class="card-tags"><span class="tag py">Python</span><span class="tag">Flask</span><span class="tag">RAG</span><span class="tag">NetworkX</span><span class="tag">API</span></div>
-                        <div class="card-features"><div class="feat"><i class="fas fa-brain"></i> AI-Powered</div><div class="feat"><i class="fas fa-project-diagram"></i> Graph Analysis</div><div class="feat"><i class="fas fa-search-plus"></i> Cycle Detection</div></div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Scikit-learn </span><span>Clustering</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
-            <button class="carousel-arrow arrow-right" id="projRight"><i class="fas fa-chevron-right"></i></button>
-            <div class="carousel-dots" id="projDots"></div>
-        </div>
 
-        <div class="container"><div class="section-footer"><span class="section-tag">&lt;/projects&gt;</span></div></div>
+        </div>
     </section>
+    <!-- ===== PROJECTS — STACKED IMAGE CARDS ===== -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">&lt;projects&gt;</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-stack">
+
+            <!-- Project 1 — Malicious Webpage Detection -->
+            <div class="project-card" data-accent="#ff006e">
+                <div class="project-card-inner">
+                    <div class="project-image-wrap">
+                        <div class="project-image-border"></div>
+                        <div class="project-image">
+                            <img src="images/project-malicious.png" alt="Malicious Webpage Detection" loading="lazy">
+                            <div class="project-image-overlay">
+                                <a href="https://github.com/Thilak2006/Malicious-Webpage-Detection" target="_blank" class="project-view-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-number">01</span>
+                        <span class="project-badge badge-latest">🔥 Latest</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta-row">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> Dec 2025</span>
+                            <span class="project-category cat-ml">Machine Learning</span>
+                        </div>
+                        <h3 class="project-name">Malicious Webpage Detection</h3>
+                        <p class="project-description">An ML system using SVM & Random Forest to analyze URL patterns, content and metadata to detect and block malicious webpages for enhanced web security.</p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag tag-python">Python</span>
+                            <span class="tech-tag tag-ml">ML</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item"><i class="fas fa-shield-alt"></i><span>Web Security</span></div>
+                            <div class="highlight-item"><i class="fas fa-chart-bar"></i><span>Classification</span></div>
+                            <div class="highlight-item"><i class="fas fa-search"></i><span>URL Analysis</span></div>
+                        </div>
+                        <a href="https://github.com/Thilak2006/Malicious-Webpage-Detection" target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                            <i class="fas fa-arrow-right link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 — Gym eShop -->
+            <div class="project-card" data-accent="#00ff88">
+                <div class="project-card-inner">
+                    <div class="project-image-wrap">
+                        <div class="project-image-border"></div>
+                        <div class="project-image">
+                            <img src="images/project-gym.png" alt="Gym eShop" loading="lazy">
+                            <div class="project-image-overlay">
+                                <a href="https://github.com/Thilak2006/gym-eshop-using-react-and-nodejs" target="_blank" class="project-view-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-number">02</span>
+                        <span class="project-badge badge-new">⚡ New</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta-row">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> Jul 2025</span>
+                            <span class="project-category cat-fs">Full Stack</span>
+                        </div>
+                        <h3 class="project-name">Gym eShop</h3>
+                        <p class="project-description">A full-stack e-commerce platform for gym equipment built with React frontend and Node.js backend, featuring product management, cart system & user authentication.</p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag tag-react">React</span>
+                            <span class="tech-tag tag-node">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item"><i class="fas fa-shopping-cart"></i><span>E-Commerce</span></div>
+                            <div class="highlight-item"><i class="fas fa-lock"></i><span>Auth System</span></div>
+                            <div class="highlight-item"><i class="fas fa-mobile-alt"></i><span>Responsive</span></div>
+                        </div>
+                        <a href="https://github.com/Thilak2006/gym-eshop-using-react-and-nodejs" target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                            <i class="fas fa-arrow-right link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 — AI Chat Assistant -->
+            <div class="project-card" data-accent="#3a86ff">
+                <div class="project-card-inner">
+                    <div class="project-image-wrap">
+                        <div class="project-image-border"></div>
+                        <div class="project-image">
+                            <img src="images/project-chat.png" alt="AI Chat Assistant" loading="lazy">
+                            <div class="project-image-overlay">
+                                <a href="https://github.com/Thilak" target="_blank" class="project-view-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-number">03</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta-row">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> Nov 2025</span>
+                            <span class="project-category cat-ai">AI / NLP</span>
+                        </div>
+                        <h3 class="project-name">AI Chat Assistant</h3>
+                        <p class="project-description">An AI-powered conversational chatbot generating real-time, context-aware responses through a robust API-driven NLP backend with a responsive front-end interface.</p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag tag-python">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item"><i class="fas fa-bolt"></i><span>Real-time</span></div>
+                            <div class="highlight-item"><i class="fas fa-server"></i><span>API-Driven</span></div>
+                            <div class="highlight-item"><i class="fas fa-brain"></i><span>Context-Aware</span></div>
+                        </div>
+                        <a href="https://github.com/Thilak" target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                            <i class="fas fa-arrow-right link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 — AI Deadlock Detection -->
+            <div class="project-card" data-accent="#8338ec">
+                <div class="project-card-inner">
+                    <div class="project-image-wrap">
+                        <div class="project-image-border"></div>
+                        <div class="project-image">
+                            <img src="images/project-deadlock.png" alt="AI Deadlock Detection" loading="lazy">
+                            <div class="project-image-overlay">
+                                <a href="https://github.com/Thilak" target="_blank" class="project-view-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <span class="project-number">04</span>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta-row">
+                            <span class="project-date"><i class="far fa-calendar-alt"></i> Apr 2025</span>
+                            <span class="project-category cat-ai">AI / Graphs</span>
+                        </div>
+                        <h3 class="project-name">AI Deadlock Detection</h3>
+                        <p class="project-description">A tool that automatically detects deadlocks in complex process workflows using graph-based analysis with RAG technology and NetworkX for cycle-detection algorithms.</p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag tag-python">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">NetworkX</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item"><i class="fas fa-brain"></i><span>AI-Powered</span></div>
+                            <div class="highlight-item"><i class="fas fa-project-diagram"></i><span>Graph Analysis</span></div>
+                            <div class="highlight-item"><i class="fas fa-search-plus"></i><span>Cycle Detection</span></div>
+                        </div>
+                        <a href="https://github.com/Thilak" target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                            <i class="fas fa-arrow-right link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-footer"><span class="section-tag">&lt;/projects&gt;</span></div>
+    </div>
+</section>
 
     <!-- ===== ACHIEVEMENTS — CERTS HORIZONTAL SCROLL ===== -->
     <section id="achievements" class="achievements">
@@ -386,7 +533,10 @@
             </div>
 
             <!-- Certificates Carousel -->
-            <div class="cert-section-title"><h3><i class="fas fa-certificate"></i> Certifications</h3><p class="scroll-hint-sm"><i class="fas fa-arrows-alt-h"></i> Scroll</p></div>
+            <div class="cert-section-title">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <p class="scroll-hint-sm"><i class="fas fa-arrows-alt-h"></i> Scroll</p>
+            </div>
             <div class="carousel-wrapper cert-carousel-wrapper">
                 <button class="carousel-arrow arrow-left" id="certLeft"><i class="fas fa-chevron-left"></i></button>
                 <div class="carousel-track cert-track" id="certTrack">
@@ -455,37 +605,35 @@
                 <button class="carousel-arrow arrow-right" id="certRight"><i class="fas fa-chevron-right"></i></button>
             </div>
 
-            <!-- Awards -->
-            <div class="awards-section">
-                <h3><i class="fas fa-trophy"></i> Competitive Programming</h3>
-                <div class="awards-grid">
-                    <div class="award-card">
-                        <div class="award-glow"></div>
-                        <div class="award-icon"><i class="fas fa-medal"></i></div>
-                        <h4>CodeChef Badge</h4>
-                        <p>Strong problem-solving skills and consistent participation in competitive programming.</p>
-                        <span class="award-date">August 2024</span>
-                    </div>
-                    <div class="award-card">
-                        <div class="award-glow"></div>
-                        <div class="award-icon gold"><i class="fas fa-crown"></i></div>
-                        <h4>Gold Rank — Python</h4>
-                        <p>Achieved Gold Rank on HackerRank, showcasing proficiency in Python, DS & algorithms.</p>
-                        <span class="award-date">January 2024</span>
-                    </div>
-		     <div class="skill-badge">
-    <div class="skill-icon">
-        <i class="fas fa-keyboard"></i>
-    </div>
-    <div class="skill-content">
-        <h4>Typing Speed</h4>
-        <p><p>
-    <span class="highlight">99 WPM</span> on 
-    <a href="https://monkeytype.com/profile/Thilak_S" target="_blank">Monkeytype</a>
-</p></p>
-        <span class="skill-tag advanced">Advanced</span>
-    </div>
-</div>
+            <div class="awards-grid">
+                <!-- Card 1 — CodeChef -->
+                <div class="award-card">
+                    <div class="award-glow"></div>
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <h4>CodeChef Badge</h4>
+                    <p>Strong problem-solving skills and consistent participation in competitive programming.</p>
+                    <span class="award-date">August 2024</span>
+                </div>
+
+                <!-- Card 2 — HackerRank Gold -->
+                <div class="award-card">
+                    <div class="award-glow"></div>
+                    <div class="award-icon gold"><i class="fas fa-crown"></i></div>
+                    <h4>Gold Rank — Python</h4>
+                    <p>Achieved Gold Rank on HackerRank, showcasing proficiency in Python, DS & algorithms.</p>
+                    <span class="award-date">January 2024</span>
+                </div>
+
+                <!-- Card 3 — MonkeyType WPM -->
+                <div class="award-card">
+                    <div class="award-glow"></div>
+                    <div class="award-icon speed"><i class="fas fa-keyboard"></i></div>
+                    <h4>99 WPM — MonkeyType</h4>
+                    <p>Achieved 99 words per minute on MonkeyType, demonstrating exceptional typing speed & accuracy.
+                    </p>
+                    <a href="https://monkeytype.com/profile/Thilak_S" target="_blank" class="award-link"><i
+                            class="fas fa-external-link-alt"></i> View Profile</a>
+                    <span class="award-date">2026</span>
                 </div>
             </div>
 
@@ -503,10 +651,47 @@
             </div>
             <div class="timeline">
                 <div class="timeline-line"></div>
-                <div class="timeline-item"><div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div><div class="timeline-content"><div class="timeline-badge">Current</div><h3>Bachelor of Technology — CSE</h3><span class="timeline-date"><i class="far fa-calendar-alt"></i> November 2025 – Present</span><p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Lovely Professional University, Phagwara, Punjab</p><p class="timeline-details">CGPA: <strong>6.8</strong></p></div></div>
-                <div class="timeline-item"><div class="timeline-marker"><i class="fas fa-briefcase"></i></div><div class="timeline-content"><h3>Full Stack Development Internship</h3><span class="timeline-date"><i class="far fa-calendar-alt"></i> July 2025</span><p class="timeline-place"><i class="fas fa-laptop-house"></i> Online — React & Node.js</p><p class="timeline-details">Hands-on experience with API creation, database integration, RESTful services, authentication flows, and deployment best practices.</p></div></div>
-                <div class="timeline-item"><div class="timeline-marker"><i class="fas fa-school"></i></div><div class="timeline-content"><h3>Intermediate (Class XII)</h3><span class="timeline-date"><i class="far fa-calendar-alt"></i> May 2023</span><p class="timeline-place"><i class="fas fa-map-marker-alt"></i> RSK International School, Tamil Nadu</p><p class="timeline-details">Percentage: <strong>67.4%</strong></p></div></div>
-                <div class="timeline-item"><div class="timeline-marker"><i class="fas fa-book-reader"></i></div><div class="timeline-content"><h3>Matriculation (Class X)</h3><span class="timeline-date"><i class="far fa-calendar-alt"></i> May 2021</span><p class="timeline-place"><i class="fas fa-map-marker-alt"></i> RSK International School, Tamil Nadu</p><p class="timeline-details">Percentage: <strong>79.6%</strong></p></div></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Current</div>
+                        <h3>Bachelor of Technology — CSE</h3><span class="timeline-date"><i
+                                class="far fa-calendar-alt"></i> August 2025 – Present</span>
+                        <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Lovely Professional University,
+                            Phagwara, Punjab</p>
+                        <p class="timeline-details">CGPA: <strong>7.03</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Development Internship</h3><span class="timeline-date"><i
+                                class="far fa-calendar-alt"></i> July 2025</span>
+                        <p class="timeline-place"><i class="fas fa-laptop-house"></i> Online — React & Node.js</p>
+                        <p class="timeline-details">Hands-on experience with API creation, database integration, RESTful
+                            services, authentication flows, and deployment best practices.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><i class="fas fa-school"></i></div>
+                    <div class="timeline-content">
+                        <h3>Intermediate (Class XII)</h3><span class="timeline-date"><i class="far fa-calendar-alt"></i>
+                            May 2023</span>
+                        <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> RSK International School, Tamil
+                            Nadu</p>
+                        <p class="timeline-details">Percentage: <strong>70.6%</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><i class="fas fa-book-reader"></i></div>
+                    <div class="timeline-content">
+                        <h3>Matriculation (Class X)</h3><span class="timeline-date"><i class="far fa-calendar-alt"></i>
+                            May 2021</span>
+                        <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> RSK International School, Tamil
+                            Nadu</p>
+                        <p class="timeline-details">Percentage: <strong>79.6%</strong></p>
+                    </div>
+                </div>
             </div>
             <div class="section-footer"><span class="section-tag">&lt;/education&gt;</span></div>
         </div>
@@ -523,23 +708,45 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-details"><h4>Email</h4><a href="mailto:thilakvairi.s27@gmail.com">thilakvairi.s27@gmail.com</a></div></div>
-                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-phone-alt"></i></div><div class="contact-details"><h4>Phone</h4><a href="tel:+918122669275">+91-8122669275</a></div></div>
-                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-details"><h4>Location</h4><p>Phagwara, Punjab, India</p></div></div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4><a href="mailto:thilakvairi.s27@gmail.com">thilakvairi.s27@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone</h4><a href="tel:+918122669275">+91-8122669275</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Phagwara, Punjab, India</p>
+                        </div>
+                    </div>
                     <div class="contact-socials">
-                        <a href="https://linkedin.com/in/thilak-sakkaravarthi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://linkedin.com/in/thilak-sakkaravarthi" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/Thilak" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="mailto:thilakvairi.s27@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
                     <div class="form-row">
-                        <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="John Doe" required></div>
-                        <div class="form-group"><label>Your Email</label><input type="email" name="email" placeholder="john@example.com" required></div>
+                        <div class="form-group"><label>Your Name</label><input type="text" name="name"
+                                placeholder="John Doe" required></div>
+                        <div class="form-group"><label>Your Email</label><input type="email" name="email"
+                                placeholder="john@example.com" required></div>
                     </div>
-                    <div class="form-group"><label>Subject</label><input type="text" name="subject" placeholder="Project Collaboration" required></div>
-                    <div class="form-group"><label>Message</label><textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div>
-                    <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <div class="form-group"><label>Subject</label><input type="text" name="subject"
+                            placeholder="Project Collaboration" required></div>
+                    <div class="form-group"><label>Message</label><textarea name="message" rows="5"
+                            placeholder="Tell me about your project..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send
+                        Message</button>
                 </form>
             </div>
             <div class="section-footer"><span class="section-tag">&lt;/contact&gt;</span></div>
@@ -551,9 +758,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo"><span class="logo-bracket">&lt;/&gt;</span> Thilak S</div>
-                <p class="footer-text">Designed & Built with <span class="heart">❤</span> by Thilak S — &copy; 2025</p>
+                <p class="footer-text">Designed & Built by Thilak S — &copy; 2026</p>
                 <div class="footer-social">
-                    <a href="https://linkedin.com/in/thilak-sakkaravarthi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://linkedin.com/in/thilak-sakkaravarthi" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/Thilak" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:thilakvairi.s27@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
@@ -567,4 +775,5 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
